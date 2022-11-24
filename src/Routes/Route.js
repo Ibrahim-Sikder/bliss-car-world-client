@@ -5,6 +5,7 @@ import Blog from "../Pages/Blog/Blog";
 import Home from "../Pages/Home/Home/Home";
 import SignUp from "../Pages/Home/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
+import NotFound from "../Pages/NotFound/NotFound";
 
 
 
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
           {
             path: '/blog',
             element: <Blog></Blog>
+          },
+          {
+            path: '*',
+            element: <NotFound></NotFound>
           }
          
          
