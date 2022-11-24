@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import logo from '../../../images/vehicle2.jpg';
 
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
        {menuItems}
       </ul>
     </div>
-    <Link to="/" className="btn btn-ghost normal-case text-xl">Bliss Car World</Link>
+    <Link to="/" className="btn btn-ghost normal-case text-xl"> <img className='w-20' src={logo} alt="" /> <strong className='text-3xl font-bold '>Vehica</strong> </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
