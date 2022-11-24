@@ -26,6 +26,9 @@ const AuthProvider = ({children}) => {
     const updateUser = (userInfo) =>{
         return updateProfile(auth.currentUser, userInfo);
     }
+    const user1= {
+        name: "Ibrahim Sikder"
+    }
     useEffect( () =>{
        const unsubscribe = onAuthStateChanged(auth, currentUser =>{
             console.log('user defining');
@@ -41,6 +44,7 @@ const AuthProvider = ({children}) => {
         updateUser,
         logOut,
         loading,
+        user1,
         user
         
     }
