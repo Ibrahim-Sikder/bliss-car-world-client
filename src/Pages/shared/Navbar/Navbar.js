@@ -6,8 +6,6 @@ import logo from '../../../images/vehicle2.jpg';
 const Navbar = () => {
 
 
-
-
     const menuItems = <React.Fragment>
          <li><Link to="/">Home</Link></li>
          <li><Link to="/blog">Blog</Link></li>
@@ -18,7 +16,7 @@ const Navbar = () => {
         
     </React.Fragment>
     return (
-        <div className="navbar bg-base-100 flex justify-between">
+        <div className="navbar bg-[#0F141E] text-white flex justify-between">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
