@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         
         </footer>
-       
+       <p className=' bg-[#232628] text-center text-white pb-5'>Copyright by Ibrahim Sikder &copy; </p>
        </div>
     );
 };
