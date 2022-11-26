@@ -1,0 +1,124 @@
+[
+    {
+        
+       "name": "Volvo. 1927",
+       "new_price": "7000$",
+       "resale_price": "1200$",
+       "location": " Country of origin: Sweden",
+       "img": "https://images.pexels.com/photos/100650/pexels-photo-100650.jpeg?cs=srgb&dl=pexels-mike-b-100650.jpg&fm=jpg"
+        
+
+    },
+    {
+        
+        "name": "Volkswagen. 1938 ",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": " Country of origin: Germany.",
+        "img": "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+         
+ 
+     },
+     {
+        
+        "name": "Toyota. 1936",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "Country of origin: Japan",
+        "img": "https://wallpaperaccess.com/full/191738.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "Ford. 1903",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": " Country of origin: USA",
+        "img": "https://c4.wallpaperflare.com/wallpaper/592/679/732/bmw-tonemapping-hdr-car-wallpaper-preview.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW. 1927",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": " Country of origin: Germany",
+        "img": "https://wallpapercave.com/wp/wp2792109.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "Audi. 1965",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "Country of origin: Germany",
+        "img": "https://c4.wallpaperflare.com/wallpaper/66/220/943/bmw-cars-car-sport-car-wallpaper-preview.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://www.supercars.net/blog/wp-content/uploads/2020/11/2015-BMW-M4-Coupe-MotoGP-Safety-Car-001-1600.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://hdwallpaperim.com/wp-content/uploads/2017/08/23/472083-BMW-car-748x420.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://wallpaperaccess.com/full/2503502.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://wallpapercave.com/wp/wp1926464.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://www.hdwallpapers.in/download/bmw_m2_coupe_blue_car_coupe_luxury_car_hd_cars-HD.jpg"
+         
+ 
+     },
+     {
+        
+        "name": "BMW",
+        "new_price": "7000$",
+        "resale_price": "1200$",
+        "location": "USA",
+        "img": "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?w=2000"
+         
+ 
+     }
+
+
+]
