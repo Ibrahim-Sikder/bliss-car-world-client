@@ -1,3 +1,24 @@
+## Using for my project 
+1.Firebase authentication
+2.UseQuery
+3.React-router-dom
+4.tailwind css 
+5.daisy ui 
+6.react-hook-form
+7.react-hot-toast
+
+## live website link: https://bliss-car-world.web.app/home
+## live server side link: https://bliss-car-world-server-ibrahim-sikder.vercel.app/
+
+ 
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
