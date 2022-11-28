@@ -1,10 +1,14 @@
 import React from 'react';
-import img from '../../images/404.png';
-import './NotFound.css';
+import img from '../../images/heroImg/404.jpg';
 const NotFound = () => {
     return (
         <div>
-           <img className='notFound' src={img} alt="" />
+           <div className='flex items-center justify-center mt-20'>
+               <div>
+               <h2 className='text-center mb-5 text-5xl font-bold'>Page not found</h2>
+                <img src={img} alt="" />
+               </div>
+           </div>
         </div>
     );
 };

@@ -1,20 +1,23 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
-import Categories from '../Categories/Categories/Categories';
-import ElectricCars from '../Categories/ElectricCar/ElectricCars';
-import MicrobusCars from '../Categories/MicrobusCar/MicrobusCars';
-import DreamCar from '../DreamCar/DreamCar';
-import SpecialSection from '../SpecialSection/SpecialSection';
+
+import Category from '../Category/Category';
+import HeroArea from '../HeroArea/HeroArea';
+import UsedMobiles from '../UsedMobiles/UsedMobiles';
+import WhyLove from '../WhyLove/WhyLove';
+// import UsedMobiles from '../UsedMobiles/UsedMobiles';
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <Categories></Categories>
-            <MicrobusCars></MicrobusCars>
-            <ElectricCars></ElectricCars>
-            <SpecialSection></SpecialSection>
-            <DreamCar></DreamCar>
+            <div>
+
+            </div>
+            <div>
+                <HeroArea></HeroArea>
+                <Category></Category>
+                <UsedMobiles></UsedMobiles>
+                <WhyLove></WhyLove>
+            </div>
         </div>
     );
 };
