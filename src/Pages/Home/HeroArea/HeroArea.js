@@ -5,12 +5,12 @@ import bannerImg from '../../../images/heroImg/banner7.jpg'
 
 const HeroArea = () => {
     return (
-        <div className='hero-area grid lg:grid-cols-2 items-center bg-red-100 px-10 py-24'>
+        <div className='hero-area grid lg:grid-cols-2 items-center bg-[#0E0F20] text-white px-10 py-24'>
             
             <div>
                <h2 className='text-5xl font-bold font-fugiat mb-5 uppercase italic'>Welcome to my shop</h2>
                 <p>Mobile phones became a very important element of well-developed societies. It is not only a device, but also a “smart” part of our life. Very often this devices support people with the answers to the various questions, like: opening hours, weather forecast, news, sport games results, clues, etc. So in a way, that devices solves everyday lifes issues and generally provides relief to peoples brains,</p>
-                <button className='btn btn-outline bg-[#FF0000] text-white px-8 mt-3 mb-5'>Buy Now </button>
+                <button className='btn btn-outline bg-[#0E0F20] text-white px-8 mt-3 mb-5'>Buy Now </button>
             </div>
 
             <div>

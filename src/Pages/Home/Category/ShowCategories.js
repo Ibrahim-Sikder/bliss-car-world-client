@@ -9,7 +9,7 @@ const ShowCategories = ({ category }) => {
     return (
         <div>
             <Link to="/usedMobiles">
-                <div className='flex p-5 mx-7 bg-slate-100 hover:bg-slate-200 rounded-lg cursor-pointer'>
+                <div className='flex p-5 mx-7 bg-[#0E0F20] text-white hover:bg-[#333787] rounded-lg cursor-pointer'>
                     <div>
                         <img className='w-16 mr-5' src={mobileImg} alt="" />
                     </div>

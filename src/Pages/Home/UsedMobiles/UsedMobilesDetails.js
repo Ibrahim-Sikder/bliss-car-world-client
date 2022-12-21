@@ -7,10 +7,10 @@ const UsedMobilesDetails = ({mobile, setTreatment}) => {
             <img className='w-11/12 h-96 object-cover' src={mobileImg} alt="" />
             <h2 className="text-2xl">{name}</h2>
             <p>{location}</p>
-            <p>{originalPrice}</p>
-            <p>{resalePrice}</p>
-            <p>{publishDate}</p>
-            <p>{yearsOfUsed}</p>
+            <p>Orginal price: {originalPrice}</p>
+            <p>Resale price: {resalePrice}</p>
+            <p>Date: {publishDate}</p>
+            <p>Use of years: {yearsOfUsed}</p>
             <p>{information}</p>
             {/* <button className='btn btn-outline w-full mt-3'>Book Now</button> */}
             <label 

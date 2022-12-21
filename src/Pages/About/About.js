@@ -1,15 +1,20 @@
 import React from 'react';
-
+import img from '../../images/heroImg/hero.png';
 const About = () => {
     return (
-        <div>
-            <div className="hero min-h-screen bg-base-200">
+        <div className='py-32 bg-[#333787] text-white'>
+            <div className="hero">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl" />
+                    <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <h1 className="text-5xl mb-5 font-bold">Find your dream mobile !</h1>
+                        <p>
+                        obil is a petroleum brand owned and operated by American oil and gas corporation ExxonMobil. The brand was formerly owned and operated by an oil and gas corporation of the same name, which itself merged with Exxon to form ExxonMobil in 1999.
+
+A direct descendant of Standard Oil, Mobil was originally known as the Standard Oil Company of New York (shortened to Socony) after Standard Oil was split into 34 different entities in a 1911 Supreme Court decision. Socony merged with Vacuum Oil Company, from which the Mobil name first originated, in 1931 and subsequently renamed itself to Socony-Vacuum Oil Company. Over time, Mobil became the company's primary identity, which incited another renaming in 1963, this time to Mobil Corporation. Mobil credits itself with being the first company to introduce paying at the pump at its gas stations, the first company to produce jet aviation fuel, as well as the first company to introduce a mobile payment device, today known as Speedpass.[2][3]
+
+
+                        </p>
                     </div>
                 </div>
             </div>

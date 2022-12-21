@@ -14,6 +14,8 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
+        <li><Link to="/all-seller">All Seller</Link></li>
+        <li><Link to="/all-buyer">All Buyer</Link></li>
         <li><Link to="/article">Blog</Link></li>
         {
             user?.uid ?

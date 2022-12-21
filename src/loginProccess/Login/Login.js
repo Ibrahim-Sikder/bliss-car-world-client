@@ -12,7 +12,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const from = location.state?.from?.pathname
+    const from = location.state?.from?.pathname || '/home'
 
     const handleLogin = data => {
         console.log(data)
@@ -20,7 +20,6 @@ const Login = () => {
         signIn(data.email, data.password)
         .then( result => {
             const user = result.user;
-            console.log(user);
             toast.success('User Login Successfully')
             navigate(from, {replace: true});
         })
@@ -47,9 +46,6 @@ const Login = () => {
             <div className='w-96 p-5'>
                 <h2 className='text-3xl text-center'>Login</h2>
                 <form onSubmit={handleSubmit(handleLogin)}>
-
-
-
                     <div className="form-control w-full ">
                         <label className="label">
                             <span className="label-text font-semibold">Your Email</span>
@@ -68,8 +64,6 @@ const Login = () => {
                             <span className="label-text font-semibold">Forget Password?</span>
                         </label>
                     </div>
-
-
 
                     {/* <p>{data}</p> */}
                     <input className='btn btn-outline w-full mt-5' value="Login" type="submit" />

@@ -8,7 +8,7 @@ const Category = () => {
     const [categories, setCategories] = useState([]);
 
     // useEffect( () => {
-    //     fetch(`http://localhost:5000/mobileCategory`)
+    //     fetch(`https://bliss-car-world-server-ibrahim-sikder.vercel.app/mobileCategory`)
     //     .then( res => res.json())
     //     .then( data => setCategories(data))
     //     .catch( err => console.error(err));
@@ -18,7 +18,7 @@ const Category = () => {
     const {data: mobileCategory, isLoading} = useQuery({
         queryKey: ['mobileCategory'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/mobileCategory`);
+            const res = await fetch(`https://bliss-car-world-server-ibrahim-sikder.vercel.app/mobileCategory`);
             const data = await res.json();
             return data;
         }

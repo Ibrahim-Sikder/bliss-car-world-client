@@ -12,10 +12,10 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const handleSignUp = data => {
-        console.log(data);
+        
         setSignUpError('');
-        createUser( data.email, data.password )
-            .then( result => {
+        createUser(data.email, data.password)
+            .then(result => {
                 const user = result.user;
                 console.log(user);
                 toast.success('User Created Successfully')
@@ -23,14 +23,45 @@ const SignUp = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                .then( () => {
-                    navigate('/');
-                })
-                .catch( err => console.error(err))
+                    .then(() => {
+                        saveUser(data.name, data.email, data.role);
+                    })
+                    .catch(err => console.error(err))
+                    navigate(true);
             })
-            .catch( err => {
-                console.error( err )
+            .catch(err => {
+                console.error(err)
                 setSignUpError(err.message)
+            })
+    }
+
+
+    const saveUser = (name, email, role) => {
+        const user = { name, email, role };
+        console.log(user)
+        fetch(`https://bliss-car-world-server-ibrahim-sikder.vercel.app/users`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                getUserToken(email);
+
+            })
+    };
+
+
+    const getUserToken = email => {
+        fetch(`https://bliss-car-world-server-ibrahim-sikder.vercel.app/jwt?email=${email}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.accessToken) {
+                    localStorage.setItem('accessToken', data.accessToken)
+                    navigate('/');
+                }
             })
     }
 
@@ -67,6 +98,16 @@ const SignUp = () => {
                         <label className="label">
                             <span className="label-text font-semibold">Forget Password?</span>
                         </label>
+                    </div>
+                    <div className="form-control w-full border border-gray-400 rounded-md px-3 pb-1">
+                        {/* <label className="label">
+                            <span className="label-text font-semibold">Select Buyer Or Saller</span>
+                        </label> */}
+                        <select {...register("role", { required: true })}>
+                            {/* <option value="">Select...</option> */}
+                            <option value="buyer" selected>Buyer</option>
+                            <option value="saller">Saller</option>
+                        </select>
                     </div>
 
 
