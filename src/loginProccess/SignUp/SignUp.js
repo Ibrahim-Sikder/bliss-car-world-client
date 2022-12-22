@@ -1,15 +1,18 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 
 const SignUp = () => {
+    const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/'
 
     const { register, formState: { errors }, handleSubmit } = useForm();
     const {createUser, updateUser} = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
-    const navigate = useNavigate();
+    const {signInWithGoogle} = useContext(AuthContext);
 
     const handleSignUp = data => {
         
@@ -19,6 +22,8 @@ const SignUp = () => {
                 const user = result.user;
                 console.log(user);
                 toast.success('User Created Successfully')
+                
+                navigate(from, {replace: true});
                 const userInfo = {
                     displayName: data.name
                 }
@@ -33,6 +38,19 @@ const SignUp = () => {
                 console.error(err)
                 setSignUpError(err.message)
             })
+    }
+
+    const handleGoogleSign = () =>{
+        signInWithGoogle()
+        .then(result=>{
+            const user = result.user ;
+            console.log(user)
+        })
+        .catch( err => {
+            console.error( err )
+           
+        })
+
     }
 
 
@@ -121,7 +139,7 @@ const SignUp = () => {
 
                 <div className="divider">OR</div>
 
-                <button className='btn btn-outline w-full'>Continue With Google</button>
+                <button className='btn btn-outline w-full' onClick={handleGoogleSign}>Continue With Google</button>
             </div>
         </div>
     );
